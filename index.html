@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Labor1</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./bundle/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="canvas-draw-wrap">
+        <div class="show-block">
+          <canvas id="canvas_draw" width="200" height="200"></canvas>
+          <img class="view-img hide-display" id="view_img" />
+        </div>
+      </div>
+      <div class="btns">
+        <button id="btn-predict">Старт</button>
+        <div class="input-img-wrp">
+          <label class="input-label-img" id="labelImg" for="input_img"> Загрузить </label>
+          <input class="input-img" id="input_img" type="file" accept=".jpg, .jpeg, .png" />
+        </div>
+        <button id="btn-clear">Удалить</button>
+      </div>
+      <div class="prediction-txt-wrp">
+        <p id="prediction-txt"></p>
+      </div>
+    </div>
+  </body>
+</html>
